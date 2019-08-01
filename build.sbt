@@ -3,8 +3,8 @@ val settings = Seq(
   organization := "com.lihaoyi",
   version := upicklePPrint.Constants.version,
 
-  scalaVersion := "2.12.0",
-  crossScalaVersions := Seq("2.10.6", "2.11.8", "2.12.0"),
+  scalaVersion := "2.12.8",
+  crossScalaVersions := Seq("2.10.7", "2.11.12", "2.12.8"),
 
   scalacOptions := Seq("-unchecked",
     "-deprecation",
@@ -245,7 +245,7 @@ lazy val upickleReadme = scalatex.ScalatexReadme(
   url = "https://github.com/lihaoyi/upickle/tree/master",
   source = "Readme"
 ).settings(
-  scalaVersion := "2.11.8",
+  scalaVersion := "2.11.12",
   (unmanagedSources in Compile) += baseDirectory.value/".."/"project"/"Constants.scala"
 )
 
@@ -255,6 +255,6 @@ lazy val pprintReadme = scalatex.ScalatexReadme(
   url = "https://github.com/lihaoyi/upickle/tree/master",
   source = "Readme"
 ).settings(
-  scalaVersion := "2.11.8",
+  scalaVersion := "2.11.12",
   (unmanagedSources in Compile) += baseDirectory.value/".."/"project"/"Constants.scala"
 )
